@@ -1,0 +1,89 @@
+
+.cat-species{
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #fad0c4 0%, #ffd1ff 100%) ;
+}
+
+.cat-species-container{
+    text-align: center;
+    width: 70vw;
+    height: 70vh;
+    background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    position: absolute;
+    bottom: 5vw;
+    left: 17vw;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50% 50% ;   
+    overflow: hidden; 
+    border-radius: 20px;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+
+}
+
+.cat-species-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* 添加溢出隐藏，防止内容溢出 */
+  }
+
+
+.cat-1-container{
+    grid-row: 1 / 3 ;
+    /* margin-top: 1rem; */
+    /* margin-left: 1rem; */
+    text-align: center;
+}
+
+
+
+.img-angela-cat{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position:0 1px;
+}
+
+
+.img-buou-cat,.img-zheer-cat
+,.img-mianyin-cat
+,.img-sanhua-cat
+,.img-xianluo-cat
+,.img-jinjila-cat{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+
+
+.tag-cat-species{
+    border-radius: 20px;
+    width: 15vw;
+    height: 5vw;
+    /* box-shadow: 0 0 10px rgb(0,153,184) inset,0 0 30px rgb(0,153,184); */
+    position: absolute;
+    left: 50%;
+    top: 4vw;
+    transform: translate(-30%);
+    text-align: center;
+    line-height: 5vw;
+    /* color: #ff40a1; */
+    color: white;
+    background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    font-weight: 800;
+}
+
+

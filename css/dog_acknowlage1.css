@@ -1,0 +1,51 @@
+.dog-acknowlage1{
+    background: linear-gradient(to bottom, #fad0c4 0%, #ffd1ff 100%);
+     width: 100vw;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+#dog-right-box{
+    height: 37vw;
+    width: 60vw;
+    background: pink;
+    position: absolute;
+    right: 10vw;
+    bottom:3vw;
+    z-index: 99;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    background: linear-gradient(to bottom right,#015281,#ed836d);
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.img-dog-left-container-1,.img-dog-left-container-2{
+    opacity: 1;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    background-color: white;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+.img-dog-left-container-2{
+    top: 55vh;
+}
+
+.img-dog-left-container-1 img,.img-dog-left-container-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+

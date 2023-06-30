@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>走马灯</title>
+    <link rel="stylesheet" href="/css/go_around.css">
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 300px;
+            height: 100px;
+            margin: 10vh auto;
+            border: 3px solid black;
+            overflow: hidden;
+            
+        }
+
+        .box{
+            width: 300px;
+            height: 100px;
+           
+           
+            display: flex;
+            animation: move 10s infinite linear;
+            
+        }
+        .box .go_pic{
+            width: 100px;
+            height: 100px;
+            image-rendering: auto;
+        }
+
+        @keyframes move{
+            to{
+                transform: translate(-600px);
+            }
+        }
+
+        .box:hover{
+            animation-play-state:paused;
+        }
+
+        .cat_go{
+            width: 100px;
+            height:50px;
+            /* background-color: pink; */
+        /*    margin: 30vh auto;
+            background-image: url("/catImgs/css_sprites.png");
+            /* background-position: -135px -50px; */
+          /*  background-size: 100px;
+            background-repeat: no-repeat;
+            animation: run 1s steps(3) infinite;
+        }
+
+        @keyframes run{
+            from{
+                background-position: 0 0px;
+            }
+            to{
+                background-position: 0 -150px;
+            }
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <div><img src="/catImgs/布偶.jpg" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/三花猫.webp" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/小狸.webp" alt="" class="go_pic"></div>
+           <div><img src="/dogImgs/恩伯斯.webp" alt="" class="go_pic"></div>
+           <div><img src="/dogImgs/边牧1.webp" alt="" class="go_pic"></div>
+           <div><img src="dogImgs/边牧2.webp" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/布偶.jpg" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/三花猫.webp" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/小狸.webp" alt="" class="go_pic"></div>
+        </div>
+    </div>
+
+    <div class="cat_go"></div>
+
+
+</body>
+</html>

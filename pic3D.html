@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D立体相册</title>
+    <link rel="stylesheet" href="/css/pic3D.css">
+    <link rel="stylesheet" href="/css/go_around.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    .showPic_box{
+        width: 100vw;
+        height: 100vh;
+        /* position: relative; */
+        background: #c94b4b;  /* fallback for old browsers */
+        background: linear-gradient(to right, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pic_font{
+      
+        position: absolute;
+        top:50% ;
+        left: 50%;
+        transform: translate(-50%,-90%);
+      
+    }
+      
+   
+    </style>
+
+
+</head>
+<body>
+
+    <div class="showPic_box">
+
+   
+    <!-- 走马灯 -->
+    <div class="container">
+        <div class="box">
+           <div><img src="/catImgs/布偶.jpg" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/三花猫.webp" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/小狸.webp" alt="" class="go_pic"></div>
+           <div><img src="/dogImgs/恩伯斯.webp" alt="" class="go_pic"></div>
+           <div><img src="/dogImgs/边牧1.webp" alt="" class="go_pic"></div>
+           <div><img src="dogImgs/边牧2.webp" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/布偶.jpg" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/三花猫.webp" alt="" class="go_pic"></div>
+           <div><img src="/catImgs/小狸.webp" alt="" class="go_pic"></div>
+        </div>
+    </div>
+    
+    <!-- 3D立体相册 -->
+    <div id="wrap">
+        <div class="in_front"><img src="/dogImgs/边牧1.webp" alt="" class="in_pic"></div>
+        <div class="in_back"><img src="/dogImgs/边牧2.webp" alt="" class="in_pic"></div>
+        <div class="in_left"><img src="/dogImgs/边牧3.jpg" alt="" class="in_pic"></div>
+        <div class="in_right"><img src="/dogImgs/二哈.webp" alt="" class="in_pic"></div>
+        <div class="in_top"><img src="/dogImgs/恩伯斯.webp" alt="" class="in_pic"></div>
+        <div class="in_bottom"><img src="/dogImgs/1.webp" alt="" class="in_pic"></div>
+        
+        <span class="o_front"><img src="/catImgs/布偶.jpg" alt="" class="o_pic"></span>
+        <span class="o_back"><img src="/catImgs/三花猫.webp" alt="" class="o_pic"></span>
+        <span class="o_left"><img src="/catImgs/小狸.webp" alt="" class="o_pic"></span>
+        <span class="o_right"><img src="/catImgs/金渐层.png" alt="" class="o_pic"></span>
+        <span class="o_top"><img src="/catImgs/1.webp" alt="" class="o_pic"></span>
+        <span class="o_bottom"><img src="/catImgs/长毛橘.webp" alt="" class="o_pic"></span>
+    </div>
+
+  
+  
+    </div>
+
+       <!-- 背景字体 -->
+       <div class="father_font">
+        <p class="pic_font">
+        <nobr>  <span id="n">dog</span>&nbsp; &nbsp;
+           <span id="e">and</span>&nbsp; &nbsp;
+           <span id="o">cat</span>
+           <span id="n2"></span>
+        </nobr> 
+         </p>
+       </div>
+   
+<script>
+        setTimeout(function(){
+
+        },2000)
+</script>
+</body>
+</html>

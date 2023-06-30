@@ -1,0 +1,57 @@
+/* 流光按钮 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000;
+}
+
+.sun-button{
+    text-decoration: none;
+    position: relative;
+    /* left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+    font-size: 2px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    width: 12vw;
+    height: 5vw;
+    text-align: center;
+    line-height: 5vw;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px ;
+    z-index: 1;
+}
+
+.sun-button::before{
+    content: "";
+    position: absolute;
+    left: -1vw;
+    right: -1vw;
+    top:-1vw;
+    bottom: -1vw;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 50px ;
+    filter: blur(20px);
+    z-index: -1;
+    animation: sun 20s infinite ;
+}
+.sun-button:hover::before{
+    animation: sun 8s infinite;
+}
+
+.sun-button:hover{
+    animation: sun 8s infinite;
+    cursor: pointer;
+}
+@keyframes sun{
+    100%{
+        background-position: -400% 0;
+    }
+}

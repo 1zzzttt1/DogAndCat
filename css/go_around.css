@@ -1,0 +1,45 @@
+/* 走马灯 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 主容器 */
+.container{
+    width:27vw;   
+    height:9vw;
+    margin: 10vh auto;
+    border: 3px solid black;
+    overflow: hidden;
+    
+}
+
+/* 移动的容器 */
+.box{
+    width: 27vw;
+    height: 9vw;
+   
+   
+    display: flex;
+    animation: move 10s infinite linear;
+    
+}
+
+/* 每张照片尺寸 */
+.box .go_pic{
+    width: 9vw;
+    height: 9vw;
+    image-rendering: auto;
+}
+
+/* 移动的动画 */
+@keyframes move{
+    to{
+        transform: translate(-54vw);
+    }
+}
+
+.box:hover{
+    animation-play-state:paused;
+}
+

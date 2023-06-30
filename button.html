@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+#video-player {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+
+#close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+
+    </style>
+</head>
+
+<button id="play-button">播放视频</button>
+
+<div id="video-player" style="display: none;">
+  <button id="close-button">关闭视频</button>
+  <video id="my-video" src="/video/猫咪咕噜.mp4" controls></video>
+</div>
+
+
+  
+  
+  
+
+
+
+    
+<script>
+var playButton = document.getElementById('play-button');
+var videoPlayer = document.getElementById('video-player');
+var closeButton = document.getElementById('close-button');
+var video = document.getElementById('my-video');
+
+playButton.addEventListener('click', function() {
+  videoPlayer.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function() {
+  // videoPlayer.style.display = 'none';
+  // video.pause(); // 暂停视频播放
+
+  var videoPlayer = document.getElementById('video-player');
+    videoPlayer.style.display = 'none';
+    var video = document.getElementById('my-video');
+    video.pause();
+});
+
+
+</script>
+</body>
+</html>

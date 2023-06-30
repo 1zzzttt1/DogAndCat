@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫狗知趣</title>
+    <link rel="stylesheet" href="./css/pic3D.css">
+    <link rel="stylesheet" href="./css/go_around.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/smooth_pic.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/cat_acknowlage1.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/02.css">
+    <link rel="stylesheet" href="./css/cat_acknowlage2.css">
+    <link rel="stylesheet" href="./css/cat_species.css">
+    <link rel="stylesheet" href="./css/dog_species.css">
+    <link rel="stylesheet" href="./css/dog_acknowlage1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./imgs/网页图标猫.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/nav.css">
+    <style>
+      
+             
+    </style>
+</head>
+<body>
+    
+
+    <div class="dog_cat">
+            <div class="dog"><p id="dog_font" style="color: aquamarine;">dog</p></div>
+            <div class="and">
+           </div>
+            <div class="cat"><p id="cat_font"  style="color: aquamarine;">cat</p></div>
+    </div>
+
+   <!-- 顶部导航栏 -->
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <svg class="icon" aria-hidden="true" style="width:2rem;height:4rem; ">
+                        <use xlink:href="#icon--dog"></use>
+                      </svg>
+                </div>
+                <div>
+                  <li> <a href="./4.结课报告.html" style="text-decoration: none; font-weight: bold;color: rgb(115, 203, 203);">结课报告</a></li> 
+                </div>
+                <ul class="links">
+                    <li><a href="#cat-species">喵咪分类</a></li>
+                    <li><a href="#cat-acknowlage">喵咪fact</a></li>
+                    <li><a href="#dog-species">汪汪分类</a></li>
+                    <li><a href="#dog-acknowlage">汪汪fact</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="iconfont icon-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                <li><a href="#cat-species">喵咪分类</a></li>
+                <li><a href="#cat-acknowlage">喵咪fact</a></li>
+                <li><a href="#dog-species">汪汪分类</a></li>
+                <li><a href="#dog-acknowlage">汪汪fact</a></li>
+            </div>
+            
+        </header>
+      
+
+    <!-- 图片平滑显示 -->
+    <div class="smooth_box" id="top">
+      
+
+        <div class="go-to-top"> <a href="#top"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shengdanjianhuahuidaodingbu"></use>
+          </svg> </a> </div>
+
+        <div class="smooth_box1">
+            <img src="./catImgs/1.webp" alt="" class="smooth_pic1">
+        </div>
+        <div class="smooth_box2">
+            <img src="./dogImgs/边牧1.webp" alt="" class="smooth_pic2">
+        </div>
+
+    </div>
+
+   
+    <!-- 展示图片区域 -->
+    <div class="showPic_box">
+        
+        <div class="tag_box">
+            <div class="svg-wrapper" >
+          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect    class="shape" height="60" width="990" />
+          <nobr> <div class="text">show Picture</div></nobr>
+          </svg>
+        </div>
+        </div>
+        
+   
+        <!-- 走马灯 -->
+        <div class="container">
+            <div class="box">
+               <div><img src="./catImgs/布偶.jpg" alt="" class="go_pic"></div>
+               <div><img src="./catImgs/三花猫.webp" alt="" class="go_pic"></div>
+               <div><img src="./catImgs/小狸.webp" alt="" class="go_pic"></div>
+               <div><img src="./dogImgs/恩伯斯.webp" alt="" class="go_pic"></div>
+               <div><img src="./dogImgs/边牧1.webp" alt="" class="go_pic"></div>
+               <div><img src="./dogImgs/边牧2.webp" alt="" class="go_pic"></div>
+               <div><img src="./catImgs/布偶.jpg" alt="" class="go_pic"></div>
+               <div><img src="./catImgs/三花猫.webp" alt="" class="go_pic"></div>
+               <div><img src="./catImgs/小狸.webp" alt="" class="go_pic"></div>
+            </div>
+        </div>
+        
+        <!-- 3D立体相册 -->
+        <div id="wrap">
+            <div class="in_front"><img src="./dogImgs/边牧1.webp" alt="" class="in_pic"></div>
+            <div class="in_back"><img src="./dogImgs/边牧2.webp" alt="" class="in_pic"></div>
+            <div class="in_left"><img src="./dogImgs/边牧3.jpg" alt="" class="in_pic"></div>
+            <div class="in_right"><img src="./dogImgs/二哈.webp" alt="" class="in_pic"></div>
+            <div class="in_top"><img src="./dogImgs/恩伯斯.webp" alt="" class="in_pic"></div>
+            <div class="in_bottom"><img src="./dogImgs/1.webp" alt="" class="in_pic"></div>
+            
+            <span class="o_front"><img src="./catImgs/布偶.jpg" alt="" class="o_pic"></span>
+            <span class="o_back"><img src="./catImgs/三花猫.webp" alt="" class="o_pic"></span>
+            <span class="o_left"><img src="./catImgs/小狸.webp" alt="" class="o_pic"></span>
+            <span class="o_right"><img src="./catImgs/金渐层.png" alt="" class="o_pic"></span>
+            <span class="o_top"><img src="./catImgs/1.webp" alt="" class="o_pic"></span>
+            <span class="o_bottom"><img src="./catImgs/长毛橘.webp" alt="" class="o_pic"></span>
+        </div>
+    
+       <!-- 背景字体 -->
+
+
+       
+
+
+       <div class="father_font">
+        <p class="pic_font">
+        <nobr> 
+         <span id="n">dog</span>&nbsp; &nbsp;
+           <span id="e">and</span>&nbsp; &nbsp;
+           <span id="o">cat</span>
+           <span id="n2"></span>
+        </nobr> 
+        </p>
+       </div>
+
+
+
+    </div>
+    
+    <!-- 猫猫分类     -->
+    <div class="cat-species" id="cat-species">
+            <div class="tag-cat-species">
+                <span>部分喵星人</span>
+            </div>
+
+            <div class="cat-species-container">
+                <div class="cat-1-container" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="linear">
+                    <img class="img-buou-cat" src="./cat-species/布偶猫.jpg" alt="">
+                    <p style="all:revert;font-size: 1vw;font-weight: bold;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-buoumao-zhongdianse"></use>
+                          </svg>
+                        布偶猫</p>
+                    <span style="font-size: 0.5vw;">温和友好，柔顺长毛，符合美女们的审美</span>
+                </div>
+                <div class="cat-2-container" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img class="img-sanhua-cat" src="./cat-species/三花（狸花）.jpg" alt="">
+                    <p style="all:revert;font-size: 1vw;font-weight: bold;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-sanhuamao"></use>
+                          </svg>
+                        玳瑁猫</p>
+                    <span style="font-size: 0.5vw;">也称”三花猫“，绝大部分为雌性，是猫界”美女“</span>
+                </div>
+                <div class="cat-3-container" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img class="img-angela-cat" src="./cat-species/土耳其安哥拉猫.jpg" alt="">
+                    <p style="all:revert;font-size: 1vw;font-weight: bold;">土耳其安哥拉猫</p>
+                    <span style="font-size: 0.5vw;">体型中等，细腻光滑的长毛，眼睛大且明亮，为蓝色或绿色</span>
+                </div>
+                <div class="cat-4-container" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <img class="img-mianyin-cat" src="./cat-species/缅因猫.jpg" alt="">
+                    <p style="all:revert;font-size: 1vw;font-weight: bold;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-mianyinmao"></use>
+                          </svg>
+                        缅因猫</p>
+                    <span style="font-size: 0.5vw;">大型喵种，具有浓密的中长毛，看似“高冷”，实则温和忠诚</span>
+
+                </div>
+                <div class="cat-5-container" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="img-xianluo-cat" src="./cat-species/暹罗猫.jpg" alt="">
+                    <p style="all:revert;font-size: 0.5vw;font-weight: bold;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xianluomao"></use>
+                          </svg>
+                        暹罗猫</p>
+                    <span style="font-size: 0.5vw;">网友戏称其为”巡逻猫“、“逻辑猫”等，由于基因突变，有一部分的毛色会变黑（烧焦）</span>
+                </div>
+                <div class="cat-6-container" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="img-zheer-cat" src="./cat-species/苏格兰折耳猫.jpg" alt="">
+                    <p style="all:revert;font-size: 0.5vw;font-weight: bold;">苏格兰折耳猫</p>
+                    <span style="font-size: 0.5vw;">具有耳朵向前折叠，外表可爱的特征，但它们通常是一个不健康的喵，请谨慎养它</span>
+                </div>
+                <div class="cat-7-container" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="img-jinjila-cat" src="./cat-species/金吉拉猫.jpg" alt="">
+                    <p style="all:revert;font-size: 0.5vw;font-weight: bold;">金吉拉猫</p>
+                    <span style="font-size: 0.5vw;">豹猫和家猫的配种，身上迷人的豹纹深受人们喜欢，性格极野</span>
+                </div>
+            </div>
+    </div>
+    
+
+    <!-- 猫猫知识区域1 -->
+    <div class="cat_acknowlage1" id="cat-acknowlage"  >
+
+        <!-- 左侧弹出盒子 -->
+        <!-- 猫咪咕噜 -->
+        <div id="left-box">
+         
+               <!-- 封面  -->
+               <div class="cat_card1_outside">
+               
+                    <!-- 正面 -->
+                    <div class="cat_card1_front">
+                        <div  class="cat_card1_front_top">
+                            <img  src="./catImgs/猫猫1.jpg" alt="">
+                        </div>
+                        <div class="cat_card1_front_bot">
+                            hover me
+                        </div>
+                    </div>
+                    <!-- 反面 -->
+                    <div class="cat_card1_back">
+                        <video class="cat_card1_back_video_container" 
+                        id="video-cat-gulu"
+                        >
+                        <!-- autoplay muted loop -->
+                            <source src="./video/猫咪咕噜.mp4">
+                        </video>
+                    </div>
+               
+               </div>
+               <!-- 封底 -->
+               <div class="cat_card1_inside">
+
+                    <span class="cat_card1_inside_content">请欣赏猫猫咕噜咕噜的声音吧~</span>
+                    <a id="cat-gulu-button"  class="sun-button">click me</a>
+               </div>
+        </div>
+
+        <!-- 猫咪贴贴 -->
+        <div id="left-box-2">
+         
+            <!-- 封面  -->
+            <div class="cat_card1_outside">
+            
+                 <!-- 正面 -->
+                 <div class="cat_card1_front">
+                     <div  class="cat_card1_front_top">
+                         <img  src="./catImgs/喵咪贴贴.jpg" alt="">
+                     </div>
+                     <div class="cat_card1_front_bot">
+                         hover me
+                     </div>
+                 </div>
+                 <!-- 反面 -->
+                 <div class="cat_card1_back">
+                     <video class="cat_card1_back_video_container" 
+                     id="video-cat-tietie"
+                     >
+                     <!-- autoplay muted loop -->
+                         <source src="./video/猫咪贴贴.mp4">
+                     </video>
+                 </div>
+            
+            </div>
+            <!-- 封底 -->
+            <div class="cat_card1_inside">
+
+                 <span class="cat_card1_inside_content">当猫咪贴贴的时候，不管是和猫猫贴贴还是和人贴贴，都代表它对你示好噢~</span>
+                 <a id="cat-tietie-button"  class="sun-button">click me</a>
+            </div>
+     </div>
+
+        <!-- 右侧弹出盒子 -->
+        <div id="right-box">
+              <div style="text-align: center;"><p style="all:revert;color: pink;font-weight: 800;font-size: 1.5vw;">喵咪趣知识</p></div>
+              <div><span style="color: #ed836d;font-weight: 800;font-size: 1.5vw;">1.迷人而美丽的家猫是世界上最常见的生物之一
+                尽管它们一直存在，在我们周围，甚至共用我们的床，它们仍然是神秘的
+                毫无疑问，所有猫的事实中最酷的是，猫通常不会对其他猫“喵喵叫”，只会对人类“喵喵叫”！
+                喵喵叫主要是小猫向猫妈妈提要求的方式，所以当你的猫对你喵喵叫时，说明你已经是个被认可的“妈妈”啦！</span></div>
+                <div><span style="color: #ed836d;font-weight: 800;font-size: 1.5vw;">2.在一只普通猫的一生中，有 1000 小时花在咕噜咕噜上，当它们咕噜咕噜的时候，代表它们很享受此刻~</span></div>
+                <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">3.猫咪每天睡大约 16 个小时（怪不得有些小猫会被叫猪咪）</span></div>
+                <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">4.你的猫猫可能比你还爱干净，它们会花 30% 的清醒时间梳理自己的毛发</span></div>
+            </div>
+
+                
+
+    </div>
+
+    <!-- 猫猫知识区域2 -->
+    <div class="cat-acknowlage2">
+        <!-- 右侧弹出盒子 -->
+        <div id="right-box-1">
+              <!-- 封面  -->
+              <div class="cat_card1_outside">
+               
+                <!-- 正面 -->
+                <div class="cat_card1_front">
+                    <div  class="cat_card1_front_top">
+                        <img  src="./catImgs/food喵.jpg" alt="">
+                    </div>
+                    <div class="cat_card1_front_bot">
+                        hover me
+                    </div>
+                </div>
+                <!-- 反面 -->
+                <div class="cat_card1_back">
+                    <video class="cat_card1_back_video_container" 
+                    id="video-cat-cainai"
+                    >
+                    <!-- autoplay muted loop -->
+                        <source src="./video/猫咪踩奶.mp4">
+                    </video>
+                </div>
+           
+           </div>
+           <!-- 封底 -->
+           <div class="cat_card1_inside">
+
+                <span class="cat_card1_inside_content">喵咪踩奶，大多数时候说明它们感到放松、愉悦</span>
+                <a id="cat-cainai-button"  class="sun-button">click me</a>
+           </div>
+        </div>
+
+        <!-- 左侧弹出盒子 -->
+        <div id="left-box-3">
+            <div style="text-align: center;"><p style="all:revert;color: pink;font-weight: 800;font-size: 1.5vw;">喵咪冷知识</p></div>
+            <div><span style="color: #ed836d;font-weight: 800;font-size: 1.5vw;">1.母猫容易变成右撇子，而公猫则更容易变成左撇子</span></div>
+              <div><span style="color: #ed836d;font-weight: 800;font-size: 1.5vw;">2.·猫慢慢眨眼睛表示亲昵，盯着看则表示锁定和敌意，所以和猫相处时不要直视它们的眼睛，慢慢眨眼更好，
+                互相碰鼻子是猫之间打招呼的方式，但是人和不熟悉的猫这么做有难度</span></div>
+              <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">3.猫的眼睛在近处无法对焦，所以你离它们很近的时候它们实际上看不清你（猫猫：爱我，就请保持距离）</span></div>
+              <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">4.几乎大部分刚出生的猫咪眼睛都是蓝色的</span></div>
+              <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">5.猫胡子的主要作用是测量能否通过面前的空间</span></div>
+          </div>
+
+
+
+
+    </div>  
+
+    <!-- 狗狗分类 -->
+    <div class="dog-species" id="dog-species">
+        <div class="tag-cat-species tag-dog-species">
+            <span>部分汪星人</span>
+        </div>
+
+        <div class="cat-species-container dog-species-container">
+            <div class="cat-1-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-buou-cat" src="./dog-species/t-边牧.jpg" alt="">
+                <p style="all:revert;font-size: 1vw;font-weight: bold;">边境牧羊犬</p>
+                <span style="font-size: 0.5vw;">具有优雅、灵活的外貌，出色的工作和学习能力深受某人喜欢，它们常常担当救人的大任</span>
+            </div>
+            <div class="cat-2-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-sanhua-cat" src="./dog-species/萨摩耶.jpg" alt="">
+                <p style="all:revert;font-size: 1vw;font-weight: bold;">萨摩耶</p>
+                <span style="font-size: 0.5vw;">号称“微笑天使”，毛色主要是纯白色，表情友好而迷人，性格友善温和</span>
+            </div>
+            <div class="cat-3-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-angela-cat" src="./dog-species/松狮犬.jpg" alt="">
+                <p style="all:revert;font-size: 1vw;font-weight: bold;">松狮犬</p>
+                <span style="font-size: 0.5vw;">有着特别的面部表情，它们的嘴唇和舌头呈蓝黑色，具有沉稳和保护性</span>
+            </div>
+            <div class="cat-4-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-mianyin-cat" src="./dog-species/伯恩山犬.webp" alt="" style="object-position: 0 1px;">
+                <p style="all:revert;font-size: 1vw;font-weight: bold;">伯恩山犬</p>
+                <span style="font-size: 0.5vw;">颜色主要为黑色、白色和棕色其生性温和善良,称为”伯医生“</span>
+
+            </div>
+            <div class="cat-5-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-xianluo-cat" src="./dog-species/中华田园犬.jpg" alt="">
+                <p style="all:revert;font-size: 0.5vw;font-weight: bold;">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhonghuatianyuanquan"></use>
+                      </svg>
+                    中华田园犬</p>
+                <span style="font-size: 0.5vw;">最大特点就是忠诚,对陌生人极其警惕,不过它们一般都是燃烧颜值长大的
+                </span>
+            </div>
+            <div class="cat-6-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-zheer-cat" src="./dog-species/荷兰毛狮犬.jpg" alt="">
+                <p style="all:revert;font-size: 0.5vw;font-weight: bold;">荷兰毛狮犬</p>
+                <span style="font-size: 0.5vw;">结实而灵活的身体，覆盖着密集、粗糙的毛发,通常用于牧羊和农场工作</span>
+            </div>
+            <div class="cat-7-container" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <img class="img-jinjila-cat" src="./dog-species/雪纳瑞犬.jpg" alt="">
+                <p style="all:revert;font-size: 0.5vw;font-weight: bold;">雪纳瑞犬</p>
+                <span style="font-size: 0.5vw;">胡须和眉毛及其独特,有方形的头部和矩形的身体结构,像一个小老头</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 狗狗知识区域1 -->
+    <div class="dog-acknowlage1" id="dog-acknowlage">
+
+        <div class="img-dog-left-container-1" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <img src="./dogImgs/萨摩耶.jpg" alt="">
+
+        </div>
+
+
+        <div class="img-dog-left-container-2" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <img src="./dogImgs/t-边牧2.jpg" alt="">
+
+        </div>
+
+        
+
+        <!-- 右侧弹出盒子 -->
+        <div id="dog-right-box" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <div style="text-align: center;"><p style="all:revert;color: pink;font-weight: 800;font-size: 1.5vw;">知狗莫如我</p></div>
+            <div><span style="color: #ed836d;font-weight: 800;font-size: 1.5vw;">1..狗可以通过舔人类的面部来表达喜爱和亲密感，这是它们的一种表达方式。（爱它，就请别嫌弃它的口水~</span></div>
+              <div><span style="color: #ed836d;font-weight: 800;font-size: 1.5vw;">2.狗的智商因品种而异，但最聪明的狗狗品种通常是边境牧羊犬、贵宾犬和金毛寻回犬等，最笨的狗狗（二哈</span></div>
+              <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">3.狗的平均寿命通常在10到15年左右，但一些小型犬种可能会活得更长，而大型犬种则可能寿命较短。</span></div>
+              <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">4.狗的鼻子印记就像人的指纹一样独一无二，每只狗都有独特的鼻子印记。</span></div>
+              <div><span style="color:skyblue;font-weight: 800;font-size: 1.5vw;">5.狗的鼻子印记不仅可以用于识别身份，还可以帮助狗狗储存气味信息。它们可以在几周或几个月后通过闻一闻来辨别自己曾经遇到过的人或物。</span></div>
+          </div>
+    </div>
+
+<script src="./js/scroll.js"></script>
+<script src="./iconfont/iconfont.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+     AOS.init();
+
+        document.getElementById('cat-gulu-button').onclick=function(){
+            document.getElementById('video-cat-gulu').play();
+        }
+
+        document.getElementById('cat-tietie-button').onclick=function(){
+            document.getElementById('video-cat-tietie').play();
+        }
+
+        document.getElementById('cat-cainai-button').onclick=function(){
+            document.getElementById('video-cat-cainai').play();
+        }
+
+
+        const toggleBtn=document.querySelector('.toggle_btn')
+    const toggleBtnIcon=document.querySelector('.toggle_btn i')
+    const dropDownMenu=document.querySelector('.dropdown_menu')
+    const dropDownMenuA=document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick=function(){
+        dropDownMenu.classList.toggle('open');
+        const isOpen=dropDownMenu.classList.contains('open');
+
+        toggleBtnIcon.classList= isOpen? 'iconfont icon-guanbi':'iconfont icon-bars'
+    }
+
+
+    dropDownMenuA.onclick=function(){
+        dropDownMenu.classList.toggle('open');
+        const isOpen=dropDownMenu.classList.contains('open');
+
+        toggleBtnIcon.classList= isOpen? 'iconfont icon-guanbi':'iconfont icon-bars'
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+/* 猫咪知识区1左侧弹出盒子-猫咪咕噜 */
+#left-box {
+    /* margin-top: 200px; */
+    opacity: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    background-color: white;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+/* 猫咪知识区1左侧弹出盒子-猫咪贴贴 */
+#left-box-2{
+    /* margin-top: 200px; */
+    opacity: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 55vh;
+    left: 4vw;
+    background-color: white;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+
+#right-box {
+    height: 37vw;
+    width: 60vw;
+    background: pink;
+    position: absolute;
+    right: 13vw;
+    bottom:3vw;
+    z-index: 99;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    background: linear-gradient(to bottom right,#015281,#ed836d);
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+
+#left-box-3{
+    height: 37vw;
+    width: 60vw;
+    background: pink;
+    position: absolute;
+    left: 13vw;
+    bottom:3vw;
+    z-index: 99;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    background: linear-gradient(to bottom right,#015281,#ed836d);
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#right-box-1{
+    opacity: 1;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 10vh;
+    right: 4vw;
+    background-color: white;
+    box-shadow: 0 16rpx 16rpx rgba(10, 16, 20, 0.24), 0 0 16rpx rgba(10, 16, 20, 0.12);
+    border-radius: 10px;
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+
+
+#left-box.leftMove,#left-box-3.leftMove{
+    animation: movefromleft 2s;
+    animation-fill-mode: forwards;
+    transition: all 1.5s;
+}
+
+#left-box-2.leftMove{
+    animation: movefromleft 2s;
+    animation-fill-mode: forwards;
+    transition: all 1.5s;
+}
+
+#right-box.rightMove{
+    animation: movefromright 2s;
+    animation-fill-mode: forwards;
+    transition: all 1.5s;
+}
+
+#right-box-1.rightMove{
+    animation: movefromright 2s;
+    animation-fill-mode: forwards;
+    transition: all 1.5s;
+}
+
+@keyframes movefromleft {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes movefromright {
+    from {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(10%);
+    }
+    
+}

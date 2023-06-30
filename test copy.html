@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        div {
+            /* margin: 0 auto; */
+            max-width: 100%;
+            width: 600px;
+        }
+ 
+        #top {
+            height: 1200px;
+            background-color: #aaaaaa;
+        }
+ 
+        #middle {
+            margin-top: 200px;
+            opacity: 0;
+            height: 400px;
+            background-color: #000000;
+        }
+ 
+        #bottom {
+            height: 300px;
+            background-color: #333;
+        }
+        #mm{
+            height: 400px;
+            background-color: pink;
+        }
+ 
+        #middle.move,
+        #bottom.move,#mm.move{
+            animation: movefromleft 2s;
+            animation-fill-mode: forwards;
+            transition: all 1.5s;
+        }
+ 
+        @keyframes movefromleft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+	<div id="top"></div>
+	<div id="middle"></div>
+	<div id="bottom"></div>
+    <div id="mm"></div>
+</body>
+<script>
+        
+    
+    window.onload = (event) => {
+        const middle = document.getElementById('middle'),
+            bottom = document.getElementById('bottom'),
+            mm=document.getElementById('mm');
+        const animationClass = 'move';
+        // 创建监听
+        const intersectionObserver = new IntersectionObserver((entries) => {
+            for (entry of entries) {
+                if (entry.intersectionRatio > 0) {
+                    addAnimationClass(entry.target, animationClass);
+                    
+                } else {
+                    console.log(animationClass);
+                    removeAnimationClass(entry.target, animationClass);
+                }
+            }
+        });
+        // 添加动画class的操作
+        function addAnimationClass(elem, animationClass) {
+            elem.className.includes(animationClass) ? 1 : elem.className = elem.className + ' ' + animationClass;
+        }
+        // 移除动画class的操作
+        function removeAnimationClass(elem, animationClass) {
+            elem.className.includes(animationClass) ? elem.className = elem.className.replace(animationClass, '') : 1;
+            console.log(elem.className);
+        }
+        // 开启监听
+        intersectionObserver.observe(middle);
+        intersectionObserver.observe(bottom);
+    }
+ 
+</script>
+</html>
